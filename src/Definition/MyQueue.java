@@ -2,29 +2,29 @@ package Definition;
 
 import Adt.MyQueueAdt;
 
-public class MyQueue implements MyQueueAdt {
+public class MyQueue<E> implements MyQueueAdt<E> {
     @Override
-    public boolean offer(Object item) {
+    public boolean offer(E item) {
         return false;
     }
 
     @Override
-    public Object poll() {
+    public E poll() {
         return null;
     }
 
     @Override
-    public Object remove() {
+    public E remove() {
         return null;
     }
 
     @Override
-    public Object peek() {
+    public E peek() {
         return null;
     }
 
     @Override
-    public Object element() {
+    public E element() {
         return null;
     }
 }
