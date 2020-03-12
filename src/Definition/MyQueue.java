@@ -76,6 +76,26 @@ public class MyQueue<E> implements MyQueueAdt<E> {
             return front.getData();
         }
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("*");
+        Node<E> temp = front;
+        for (int i = 0; i < size; i++) {
+            if(!(i<size-1)) {
+                sb.append(temp.toString());
+                sb.append("-->");
+                temp=temp.getNext();
+            }
+            else
+            {
+                sb.append(front.toString());
+            }
+
+        }
+        return sb.toString();
+    }
+
     private static class  Node<E>
     {
         private Node<E> next;
