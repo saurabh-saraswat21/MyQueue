@@ -70,7 +70,11 @@ public class MyQueue<E> implements MyQueueAdt<E> {
 
     @Override
     public E element() {
-        return null;
+        if(front==null)
+            throw new NoSuchElementException("Queue Is Empty");
+        else {
+            return front.getData();
+        }
     }
     private static class  Node<E>
     {
