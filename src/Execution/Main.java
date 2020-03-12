@@ -4,7 +4,7 @@ import Definition.MyQueue;
 
 public class Main {
     public static void main(String[] args) {
-        MyQueue<Integer> queue = new MyQueue<Integer>();
+        MyQueue<Integer> queue = new MyQueue<>();
         for (int i = 0; i < 10; i++) {
             queue.offer(i);
         }
@@ -23,6 +23,5 @@ public class Main {
         System.out.println("Remove");
         System.out.println(queue.remove());
         System.out.println(queue);
-        System.out.println("");
     }
 }

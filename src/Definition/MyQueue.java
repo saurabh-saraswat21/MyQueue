@@ -12,17 +12,16 @@ public class MyQueue<E> implements MyQueueAdt<E> {
     public boolean offer(E item) {
         if(front==null)
         {
-            rear= new Node<E>(item);
+            rear= new Node<>(item);
             front=rear;
-            size++;
 
         }
         else
         {
             rear.next=new Node<>(item);
             rear=rear.next;
-            size++;
         }
+        size++;
         return true;
     }
 
