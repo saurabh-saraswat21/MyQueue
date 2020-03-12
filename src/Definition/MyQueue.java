@@ -92,5 +92,9 @@ public class MyQueue<E> implements MyQueueAdt<E> {
         public E getData() {
             return data;
         }
+        @Override
+        public String toString() {
+            return this.getData().toString();
+        }
     }
 }
