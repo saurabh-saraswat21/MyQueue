@@ -82,14 +82,14 @@ public class MyQueue<E> implements MyQueueAdt<E> {
         StringBuilder sb = new StringBuilder("*");
         Node<E> temp = front;
         for (int i = 0; i < size; i++) {
-            if(!(i<size-1)) {
+            if((i<size-1)) {
                 sb.append(temp.toString());
                 sb.append("-->");
                 temp=temp.getNext();
             }
             else
             {
-                sb.append(front.toString());
+                sb.append(temp.toString());
             }
 
         }
