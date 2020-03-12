@@ -26,8 +26,17 @@ public class MyQueue<E> implements MyQueueAdt<E> {
 
     @Override
     public E poll() {
+        if(front==null)
+        {
+            return null;
+        }
+        else{
+            E temp = front.getData();
+            front = front.next;
+            size--;
+            return temp;
+        }
 
-        return null;
     }
 
     @Override
