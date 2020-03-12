@@ -26,6 +26,7 @@ public class MyQueue<E> implements MyQueueAdt<E> {
 
     @Override
     public E poll() {
+
         return null;
     }
 
@@ -36,7 +37,11 @@ public class MyQueue<E> implements MyQueueAdt<E> {
 
     @Override
     public E peek() {
+    if(front==null)
         return null;
+    else {
+        return front.getData();
+    }
     }
 
     @Override
